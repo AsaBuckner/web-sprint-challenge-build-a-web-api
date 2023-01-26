@@ -12,3 +12,9 @@ I need this code, but don't know where, perhaps should make some middleware, don
 
 Pull your server into this file and start it!
 */
+
+const server = require('./api/server')
+
+server.listen(process.env.PORT || 9000, () => {
+    console.log("server started on http://localhost:9000")
+})
